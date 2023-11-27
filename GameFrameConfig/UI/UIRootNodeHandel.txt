@@ -1,0 +1,38 @@
+using UnityEngine;
+
+namespace GameFrame
+{
+    public class UIRootNodeHandel:Singleton<UIRootNodeHandel>
+    {
+        private Transform _uiRootNode;
+        public Transform UIRootNode
+        {
+            get
+            {
+                if (_uiRootNode != null)
+                    return _uiRootNode;
+                _uiRootNode = GameObject.Find("UIRoot").transform;
+                if (_uiRootNode == null)
+                    throw new System.Exception("获取UI根节点失败 UIRoot");
+                return _uiRootNode;
+            }
+        }
+        #BreakIn#
+
+        /// <summary>
+        /// 根据层级获取Transform
+        /// </summary>
+        /// <param name="uiTier"></param>
+        /// <returns></returns>
+        public Transform GetTransform(UITier uiTier)
+        {
+            Transform trans = null;
+            switch (uiTier+"_Root")
+            {
+                #Case#
+            }
+
+            return trans;
+        }
+    }
+}

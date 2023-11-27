@@ -1,0 +1,24 @@
+        private #VariableControl# _#VariableControlName#;
+        public #AttributeControl# #AttributeControlName#
+        {
+            get
+            {
+                if (SelfTransform == null)
+                {
+                    Log.Warning($"{this.GetType().Name}: SelfTransform EqualTo Null", Color.red);
+                    return null;
+                }
+
+                if (_#VariableControlName# != null)
+                    return _#VariableControlName#;
+                #VariableControl# temp = UIHandle.GetControl<#VariableControl#>(SelfTransform, "#GetTheGameObjectControl#");
+                if (temp == null)
+                {
+                    Log.Warning($"{this.GetType().Name}: Get #VariableControl# Fail", Color.red);
+                    return null;
+                }
+
+                _#VariableControlName# = temp;
+                return _#VariableControlName#;
+            }
+        }

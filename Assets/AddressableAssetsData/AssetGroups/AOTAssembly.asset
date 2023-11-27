@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: AOTAssembly
+  m_EditorClassIdentifier: 
+  m_GroupName: AOTAssembly
+  m_Data:
+    m_SerializedData: []
+  m_GUID: a41d079c27d873144987288b40b704ec
+  m_SerializeEntries:
+  - m_GUID: 89d9c3e5931db994286ad3f79c5fc539
+    m_Address: mscorlib.dll
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 21750d2ae48d42b4fbccc9389d7601a1
+    m_Address: System.dll
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 05b4218b4efbb6144a91ba47e48a7beb
+    m_Address: UniTask.dll
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 28f89bb945d73904498cf42c70be4380, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 8c745228de0e58b48b7f5b2c1d610d94, type: 2}
+    - {fileID: 11400000, guid: af5eeb78a9a9b2743ad41c657dd035ee, type: 2}

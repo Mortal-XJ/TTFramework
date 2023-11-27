@@ -1,0 +1,38 @@
+//----------------------
+// Developer Mortal
+// Date  -  - 
+// Script Overview 
+//----------------------
+using UnityEngine;
+using GameFrame;
+
+namespace GameLogic
+{
+    public partial class #ClassName# : GameFrame.IUIRelease
+    {
+        /// <summary>
+        /// UIRoot节点
+        /// </summary>
+        private Transform _selfTransform;
+        public Transform SelfTransform => _selfTransform;
+
+        /// <summary>
+        /// 绑定根节点
+        /// </summary>
+        /// <param name="transform"></param>
+        public void BindRootTransform(Transform transform)
+        {
+            _selfTransform = transform;
+        }
+
+        #ComponentControl#
+        /// <summary>
+        /// 解除绑定
+        /// </summary>
+        public void Release()
+        {
+            #ExceptForBinding#
+            _selfTransform = null;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+//----------------------
+// Developer 
+// Date  -  - 
+// Script Overview 
+//----------------------
+using GameFrame;
+
+namespace GameLogic
+{
+    public partial class #ClassName# :UnityEngine.MonoBehaviour
+    {
+    }
+}

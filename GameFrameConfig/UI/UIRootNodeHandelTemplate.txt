@@ -1,0 +1,20 @@
+        
+        string #VariableName#Name = "#VariableName#";
+        private Transform _#VariableName#;
+        public Transform #VariableName#
+        {
+            get
+            {
+                if (_#VariableName# != null)
+                    return _#VariableName#;
+                Transform temp = UIRootNode.Find(#VariableName#Name);
+                if (temp == null)
+                {
+                    Log.Warning($"{this.GetType().Name}: Get { #VariableName#Name} Fail", Color.red);
+                    return null;
+                }
+
+                _#VariableName# = temp;
+                return _#VariableName#;
+            }
+        }

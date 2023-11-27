@@ -1,0 +1,22 @@
+//----------------------
+// Developer 
+// Date  -  - 
+// Script Overview 
+//----------------------
+using GameFrame;
+
+namespace GameLogic
+{
+    [UnityEngine.DisallowMultipleComponent]
+    public partial class #ClassName#:#ClassBaseName#,GameFrame.IUIShowWind
+    {
+        public override void OnShow()
+        {
+        }
+
+        public override void OnHide()
+        {
+            
+        }
+    }
+}
